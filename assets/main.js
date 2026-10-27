@@ -1,0 +1,3 @@
+document.querySelector('.bg').onclick=()=>document.querySelector('nav').classList.toggle('o');
+const f=document.getElementById('cf');if(f)f.onsubmit=e=>{e.preventDefault();const d=new FormData(f);
+location.href='mailto:mail@amics.in?subject='+encodeURIComponent('Enquiry from '+d.get('company'))+'&body='+encodeURIComponent('Name: '+d.get('name')+'\nCompany: '+d.get('company')+'\nEmail: '+d.get('email')+'\nPhone: '+d.get('phone')+'\n\n'+d.get('msg'))};
